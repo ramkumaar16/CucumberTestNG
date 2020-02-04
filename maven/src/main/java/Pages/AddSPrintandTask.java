@@ -24,7 +24,8 @@ public class AddSPrintandTask extends HomePage {
 	
 	@FindBy(how=How.XPATH,using="//input[@name='Sprint Name']")
 	private WebElement eleSprint;
-	public AddSPrintandTask sprintname(){
+	public AddSPrintandTask sprintname() throws InterruptedException{
+		Thread.sleep(1000);
 		eleSprint.sendKeys("HMTPROJECT");
 		//takeSnap();
 		return this;	

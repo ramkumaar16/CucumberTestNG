@@ -1,4 +1,4 @@
-Feature: Test Smoke Sceanrious
+ Feature: Test Smoke Sceanrious
 
 
 Scenario: Test Login fuctionailty
