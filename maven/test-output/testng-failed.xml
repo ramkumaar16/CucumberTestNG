@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [BDD Test Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtentReportLisener"/>
+  </listeners>
+  <test thread-count="1" name="Test(failed)" parallel="tests">
     <classes>
       <class name="RunnerClass.TestRunner">
         <methods>
@@ -11,5 +14,5 @@
         </methods>
       </class> <!-- RunnerClass.TestRunner -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [BDD Test Suite] -->

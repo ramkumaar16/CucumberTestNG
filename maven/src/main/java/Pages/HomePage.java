@@ -23,7 +23,7 @@ public class HomePage extends LoginPage {
 	@FindBy(how=How.ID,using="projectname")
 	private WebElement typeName;
 	public HomePage typename(){
-		typeName.sendKeys("jamesmoner");
+		typeName.sendKeys("jamesaamoner");
 		takeSnap();
 		System.out.println("passed");
 		return this;	
